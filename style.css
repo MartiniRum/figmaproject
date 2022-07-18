@@ -148,4 +148,36 @@ header {
   position: absolute;
   opacity: 0.5;
   margin-top: 60px;
+}
+
+.burger-icon {
+  color: #FFFFFF;
+  display: none;
+  position: absolute;
+  right: 8vw;
+  top: 47px;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    width: 70vw;
+  }
+  p {
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    margin-left: 20vw;
+  }
+  .social {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
