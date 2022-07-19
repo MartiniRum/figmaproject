@@ -160,7 +160,8 @@ header {
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    width: 70vw;
+    max-width: 70vw;
+    min-width: 523px;
   }
   p {
     max-width: 70vw;
@@ -179,5 +180,8 @@ header {
   }
   .burger-icon {
     display: block;
+  }
+  body {
+    min-width: 558px;
   }
 }/*# sourceMappingURL=style.css.map */
