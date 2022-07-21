@@ -178,7 +178,7 @@ header {
 
     .hero-content {
         margin-top: 0;
-        margin-left: 40px;
+        margin-left: 50px;
 
         h1 {
             max-width: 70vw;
@@ -202,7 +202,7 @@ header {
     nav {
         /* display: none; */
         background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-        opacity: 0.9;
+        opacity: 0.98;
         border-radius: 10px;
         position: absolute;
         overflow: hidden;
@@ -216,7 +216,7 @@ header {
         margin-right: 0;
     }
     .nav-e {
-        color: #210049c0;
+        color: #2b012b;
     }
 
     nav.show {
@@ -227,7 +227,9 @@ header {
     .logo {
         display: flex;
         margin-left: 20vw;
-
+        .logo-link{
+            margin-right: 3vw;
+        }
     }
 
     .social {

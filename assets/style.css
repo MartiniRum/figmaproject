@@ -167,7 +167,7 @@ header {
   }
   .hero-content {
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 50px;
   }
   .hero-content h1 {
     max-width: 70vw;
@@ -187,7 +187,7 @@ header {
   nav {
     /* display: none; */
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    opacity: 0.9;
+    opacity: 0.98;
     border-radius: 10px;
     position: absolute;
     overflow: hidden;
@@ -201,7 +201,7 @@ header {
     margin-right: 0;
   }
   .nav-e {
-    color: rgba(33, 0, 73, 0.7529411765);
+    color: #2b012b;
   }
   nav.show {
     /* display: block; */
@@ -210,6 +210,9 @@ header {
   .logo {
     display: flex;
     margin-left: 20vw;
+  }
+  .logo .logo-link {
+    margin-right: 3vw;
   }
   .social {
     display: none;
