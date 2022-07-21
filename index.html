@@ -17,15 +17,15 @@
     <title>Figma Project</title>
 </head>
 
-<body>
+<body onclick="closeMenu()">
     <div class="container">
         <header>
             <div class="logo">
                 <a class="logo-link" href="index.html"><img src="assets/img/logoimage.svg" alt="logo"></a>
                 <h2>Portfolio</h2>
             </div>
-            <span class="burger-icon"><i  class="fa-solid fa-bars"></i></span>
-                <nav class="menu">
+            <span class="burger-icon" id="nav-burger" onclick="toggleNav(event)"><i  class="fa-solid fa-bars"></i></span>
+                <nav class="menu" onclick="preventClose(event)">
                     <a class="nav-e" href=''>Projects</a>
                     <a class="nav-e" href=''>Technologies</a>
                     <a class="nav-e" href=''>About me</a>
@@ -48,6 +48,24 @@
             </div>
         </main>
     </div>
+    <script defer>
+        function toggleNav(event) {
+            document.querySelector('nav')
+                .classList
+                .toggle('show')
+                event.stopPropagation()
+        }
+
+
+        function closeMenu(){
+            document.querySelector('nav')
+            .classList
+            .remove('show')
+        }
+        function preventClose(event){
+            event.stopPropagation();
+        }
+    </script>
 </body>
 
 </html>
