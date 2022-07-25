@@ -24,45 +24,92 @@
                 <a class="logo-link" href="index.html"><img src="assets/img/logoimage.svg" alt="logo"></a>
                 <h2>Portfolio</h2>
             </div>
-            <span class="burger-icon" id="nav-burger" onclick="toggleNav(event)"><i  class="fa-solid fa-bars"></i></span>
-                <nav class="menu" onclick="preventClose(event)">
-                    <a class="nav-e" href=''>Projects</a>
-                    <a class="nav-e" href=''>Technologies</a>
-                    <a class="nav-e" href=''>About me</a>
-                </nav>
+            <span class="burger-icon" id="nav-burger" onclick="toggleNav(event)"><i class="fa-solid fa-bars"></i></span>
+            <nav class="menu" onclick="preventClose(event)">
+                <a class="nav-e" href=''>Projects</a>
+                <a class="nav-e" href=''>Technologies</a>
+                <a class="nav-e" href=''>About me</a>
+            </nav>
             <div class="social">
                 <img class="social-icon" src="assets/img/mark-github-24.svg" alt="github-logo">
                 <img class="social-icon" src="assets/img/Linkedin.svg" alt="linkedin-logo">
             </div>
         </header>
         <main>
-            <div class="hero-content">
+            <section class="hero-content">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
-                <a href="" class="button">
-                    <h2>
+                <a href="" class="button1">
+                    <h2 class="lets-begin">
                         Let's begin
                     </h2>
                 </a>
-            </div>
-        </main>
+
+            </section>
+            <section class="Projects">
+                <h1 class="projects-header">Projects</h1>
+
+
+
+
+                <div class="project project1">
+                    <div class="project-text">
+                        <h2 class="project-header">PROJECT 1</h2>
+                        <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="project-button">Look it up</span>
+                    </div>
+                    <img src="/assets/img/projektas.jpg" alt="projektas-img">
+                </div>
+
+
+
+
+                <div class="project2-3">
+
+                    <div class="project project2">
+                        <img src="/assets/img/projektas.jpg" alt="projektas-img">
+                        <div class="project-text">
+                            <h2 class="project-header">PROJECT 2</h2>
+                            <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magn...</p>
+                            <span class="project-button">Look it up</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="project project3">
+                        <img src="/assets/img/projektas.jpg" alt="projektas-img">
+                        <div class="project-text">
+                            <h2 class="project-header">PROJECT 3</h2>
+                            <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magn...</p>
+                            <span class="project-button">Look it up</span>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+
+    </main>
     </div>
     <script defer>
         function toggleNav(event) {
             document.querySelector('nav')
                 .classList
                 .toggle('show')
-                event.stopPropagation()
+            event.stopPropagation()
         }
 
 
-        function closeMenu(){
+        function closeMenu() {
             document.querySelector('nav')
-            .classList
-            .remove('show')
+                .classList
+                .remove('show')
         }
-        function preventClose(event){
+        function preventClose(event) {
             event.stopPropagation();
         }
     </script>
