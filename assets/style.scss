@@ -190,14 +190,14 @@ section {
     margin-top: 200px;
 
 
-    .project-header:hover::after {
+    .project-header::after {
         content: "";
         position: absolute;
-        top: 50px;
-        left: 0%;
+        top: 70px;
+        left: -30%;
         bottom: 0;
-        width: 100%;
-        height: 6px;
+        width: 160%;
+        height: 10px;
         background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 83px;
@@ -219,9 +219,9 @@ section {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
-        line-height: 88.5%;
-        margin-left: -9.5%;
+        margin-left: -8%;
         position: relative;
+        margin-top: 0px;
     }
 
     .project1 {
@@ -234,9 +234,15 @@ section {
         justify-content: space-around;
         margin-top: 93px;
         margin-bottom: 50px;
+
         .project-paragraph {
-            margin-top: 50px;
-            margin-left: 35px;
+            margin-top: 75px;
+            margin-left: 20px;
+        }
+
+        .project-button {
+            margin-top: 30px;
+            margin-left: -20px;
         }
     }
 
@@ -255,6 +261,11 @@ section {
     justify-content: space-between;
     margin-top: 90px;
 
+    .project-header::after {
+        height: 5px;
+        top: 65px;
+    }
+
     img {
         width: 91%;
         max-height: 38%;
@@ -264,6 +275,7 @@ section {
         margin-left: 22px;
         margin-top: 22px;
     }
+
     p {
         margin-top: 50px;
         margin-left: 10px;
@@ -277,11 +289,19 @@ section {
     max-height: 720px;
     box-shadow: 0px 0px 12px #FFFFFF;
     border-radius: 50px 0px;
-    .project-header{
-        margin: 0;
+
+    .project-header {
+        margin-top: -18px;
+        margin-left: -18px;
     }
-    .project-button{
-        margin: 13px;
+
+    .project-button {
+        margin-top: 15px;
+    }
+
+    .project-paragraph {
+        margin-top: 10px;
+        max-width: 90%;
     }
 }
 
@@ -292,11 +312,21 @@ section {
     box-shadow: 0px 0px 12px #FFFFFF;
     border-radius: 50px 0px;
     margin-right: -5px;
-    .project-header{
-        margin: 0;
+
+    .project-header {
+        margin-top: -15px;
+        margin-left: -25px;
     }
-    .project-button{
-        margin: 13px;
+
+    .project-button {
+        margin-top: 11px;
+        margin-left: -20px;
+    }
+
+    .project-paragraph {
+        margin-left: -10px;
+        margin-top: 10px;
+        max-width: 90%;
     }
 }
 
@@ -419,12 +449,12 @@ section {
     }
 
     .button1 {
-        width: 200px;
-        height: 60px;
-        margin-top: 30px;
-        font-size: 3vw;
-        h2 {
-            font-size: 3vw;
+        width: 30vw;
+        height: 10vw;
+        margin-top: 20px;
+        margin-bottom: 0;
+        .lets-begin{
+            font-size: 3.5vw;
         }
     }
 
@@ -434,57 +464,96 @@ section {
 
     /////////////////////
     section {
+        margin-top: 70px;
         flex-wrap: wrap;
         justify-content: space-around;
         .projects-header{
-            font-size: 8vw;
+            font-size: 10vw;
+            margin-top: 0;
+            margin-left: 40px;
+
+        }
+        .project-header::after {
+            width: 100%;
+            left: 0px;
+            margin-top: -20px;
+            height: 5px;
         }
         .project1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
             border: solid 1px white;
-            min-height: 720px;
             box-shadow: 0px 0px 12px #FFFFFF;
             border-radius: 50px 0px;
-            flex-wrap: wrap;
-            max-width: 50%;
-            max-height: 520px;
-            .project-header{
-                margin-top: 0;
+            width: 80%;
+            height: auto;
+            .project-text{
                 margin-top: 0;
             }
+            .project-header {
+                margin-top: 0;
+            }
+
             img {
-                max-height: 50%;
-                width: 90%;
-                margin-top: 0;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                max-height: 38%;
+                width: 91%;
+                margin: 2vw;
+                border-radius: 50px 10px 10px 10px;
+                padding: 0;
             }
+
             .project-paragraph {
-            margin-top: 0;
+                margin-top: 10px;
             }
+
             .project-button {
-                margin-bottom: 0;
+                margin: 10px;
             }
+        }
+
+        .project2-3 {
+            margin: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .project2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
             min-height: auto;
+            width: 80%;
 
             img {
                 margin: 2vw;
+            }
+            .project-button{
+                margin: 10px;
             }
         }
 
         .project3 {
             min-height: auto;
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
 
             img {
                 margin: 2vw;
             }
+            .project-button{
+                margin: 10px;
+            }
         }
 
         .project-button {
-            width: 23vw;
-            height: 8vw;
-            margin: 10px;
-            font-size: 3vw;
+            width: 30vw;
+            height: 10vw;
+            font-size: 3.5vw;
         }
 
         .project-paragraph {
@@ -496,7 +565,7 @@ section {
 
         .project-header {
             font-size: 5vw;
-
+            padding: 10px;
         }
     }
 }
